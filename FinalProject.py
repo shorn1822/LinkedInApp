@@ -13,7 +13,7 @@ import plotly.graph_objects as go
 
 
 ####creating model 
-s= pd.read_excel("social_media_usage.xlsx")
+s= pd.read_csv("social_media_usage.csv")
 
 def clean_sm(x):
     x= np.where(x==1, 1, 0)
